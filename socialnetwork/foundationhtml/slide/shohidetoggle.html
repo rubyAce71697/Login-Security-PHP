@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<html>
+	<head>
+		<title>Hide Show Drop Container</title>
+		<link rel="stylesheet" href="css/foundation.css" />
+		
+		<link rel="stylesheet" href="css/app.css" />
+		
+		<script src="js/vendor/custom.modernizr.js"></script>
+	</head>
+	
+	
+	<body>
+		<section id="megaContainer" style="display:none">
+			
+			<div class="row">
+				
+				<div class="large-4 columns">
+					<p>Samuel Spade's jaw was long and bony, his chin a jutting v under the more flexible v of his mouth. His nostrils curved back to make another, smaller, v. His yellow-grey eyes were horizontal. The V motif was picked up again by thickish brows</p>
+				</div>
+				
+				<div class="large-4 columns">
+					<p>rising outward from twin creases above a hooked nose, and his pale brown hair grew down-from high flat temples-in a point on his forehead. He looked rather pleasantly like a blond Satan. He said to Effie Perine: "Yes, sweetheart?"</p>
+				</div>
+				
+				<div class="large-4 columns">
+					<p>She was a lanky sunburned girl whose tan dress of thin woolen stuff clung to her with an effect of dampness. Her eyes were brown and playful in a shiny boyish face.<br /><br />- The Maltese Falcon</p>
+				</div>
+				
+			</div>
+		
+		</section>
+	
+		<div class="row">
+		
+			<div class="large-10 columns large-centered">
+			
+				<a href="#" id="megaDrop">&plus;</a>
+			</div>			
+			<script src="js/vendor/jquery.js"></script>
+		
+		<script src="js/foundation.min.js"></script>
+		
+		<script>
+			$(document).foundation();
+			
+			$(document).ready(function() {
+				$('#megaDrop').click(function() {
+					$('#megaContainer').slideToggle(300,function(){
+						if ($(this).is(":hidden")) $("#megaDrop").html("&plus;");
+						else $("#megaDrop").html("&times;");
+					});
+					return false;
+				});
+			});
+		</script>				
+			</body>
+			</html>
